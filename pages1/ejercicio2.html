@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>Retos bootcamp</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="pages1/home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Reto 1</a>
+                <div class="dropdown-content">
+                    <a href="#">Ejercicio 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <h1>Ejercicio 2</h1>
+        <table id="t01" align="center">
+            <tr>
+                <th>Variable</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>Masa 1</td>
+                <td><input id="txtm1R2" type="number"></td>
+            </tr>
+            <tr>
+                <td>Masa 2</td>
+                <td><input id="txtm2R2" type="number"></td>
+            </tr>
+            <tr>
+                <td>Distancia</td>
+                <td><input id="txtm3R2" type="number"></td>
+            </tr>
+            <tr>
+                <td class="resultadoTitulo">Resultado</td>
+                <td class="resultadoValor">
+                    <p id="resultado"></p>
+                </td>
+            </tr>
+        </table>
+        <div class="centrar padding">
+            <button class="boton" onclick="calcularFuerzaGravitacional()">Calcular</button>
+        </div>
+    </main>
+    <script src="../reto1.js"></script>
+    <script src="../reto2.js"></script>
+</body>
+
+</html>

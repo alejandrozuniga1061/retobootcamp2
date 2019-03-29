@@ -66,7 +66,47 @@ function factorial(n) {
     }
     return resultado;
 }
+/**
+ * Ejercicio 11
+ */
 
+ function validarNumeroPrimo(){
+     var numero = 11;
+     var mitad = numero / 2;
+     var isPrimo = "Es primo";
+     for(var i = 2; i <= mitad ; i++){
+        if(numero % i === 0){
+            isPrimo = "No es primo";
+            break;
+        }
+     }
+     if(numero === 1) isPrimo = "No es primo";
+     console.log(isPrimo);
+ }
+
+/**
+ * Ejercicio 12
+ */
+function calcularSerie12(){
+    var resultado = 0 ;
+    var numeroMaximo = 10;
+    for(var i = 1; i<=numeroMaximo ; i++){
+        resultado += (1/i);
+    }
+    console.log(resultado);
+}
+
+/**
+ * Ejercicio 13
+ */
+function calcularSerie13(){
+    var resultado = 0 ;
+    var numeroMaximo = 3;
+    for(var i = 1; i<=numeroMaximo ; i++){
+        resultado += (i/Math.pow(2,i));
+    }
+    console.log(resultado);
+}
 
 /**
  * Ejercicio 14
